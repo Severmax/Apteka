@@ -1,0 +1,17 @@
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.csproj.AssemblyReference.cache
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.csproj.SuggestedBindingRedirects.cache
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.admin.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.Form1.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.login.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.Properties.Resources.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.register.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.settings.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.survey.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.user.resources
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.csproj.GenerateResource.cache
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.csproj.CoreCompileInputs.cache
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\bin\Debug\apteka.exe.config
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\bin\Debug\apteka.exe
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\bin\Debug\apteka.pdb
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.exe
+C:\Users\icefaced\Desktop\apteka\apteka\apteka\obj\Debug\apteka.pdb

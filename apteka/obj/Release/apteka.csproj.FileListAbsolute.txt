@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\bin\Release\apteka.exe.config
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.admin.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.Form1.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.login_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.Properties.Resources.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.register_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.settings_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.survey_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.user_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\bin\Release\apteka.exe
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\bin\Release\apteka.pdb
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.exe
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\apteka\apteka\obj\Release\apteka.pdb
