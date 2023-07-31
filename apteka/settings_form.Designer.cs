@@ -43,7 +43,7 @@
             this.userdata_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userdata_textbox.Location = new System.Drawing.Point(528, 117);
             this.userdata_textbox.Name = "userdata_textbox";
-            this.userdata_textbox.Size = new System.Drawing.Size(470, 38);
+            this.userdata_textbox.Size = new System.Drawing.Size(470, 41);
             this.userdata_textbox.TabIndex = 0;
             // 
             // meddata_textbox
@@ -51,7 +51,7 @@
             this.meddata_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.meddata_textbox.Location = new System.Drawing.Point(528, 164);
             this.meddata_textbox.Name = "meddata_textbox";
-            this.meddata_textbox.Size = new System.Drawing.Size(470, 38);
+            this.meddata_textbox.Size = new System.Drawing.Size(470, 41);
             this.meddata_textbox.TabIndex = 1;
             // 
             // admindata_textbox
@@ -59,7 +59,7 @@
             this.admindata_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admindata_textbox.Location = new System.Drawing.Point(528, 216);
             this.admindata_textbox.Name = "admindata_textbox";
-            this.admindata_textbox.Size = new System.Drawing.Size(469, 38);
+            this.admindata_textbox.Size = new System.Drawing.Size(469, 41);
             this.admindata_textbox.TabIndex = 2;
             // 
             // save_button
@@ -81,6 +81,7 @@
             this.back_button.TabIndex = 4;
             this.back_button.Text = "Назад";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // userdata_label
             // 
@@ -112,7 +113,7 @@
             this.admindata_label.TabIndex = 7;
             this.admindata_label.Text = "Дані адміністраторів";
             // 
-            // settings
+            // settings_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +126,7 @@
             this.Controls.Add(this.admindata_textbox);
             this.Controls.Add(this.meddata_textbox);
             this.Controls.Add(this.userdata_textbox);
-            this.Name = "settings";
+            this.Name = "settings_form";
             this.Text = "settings";
             this.Load += new System.EventHandler(this.settings_Load);
             this.ResumeLayout(false);

@@ -33,7 +33,8 @@
             this.loginlabel = new System.Windows.Forms.Label();
             this.loginbutton = new System.Windows.Forms.Button();
             this.passwordlabel = new System.Windows.Forms.Label();
-            this.back_button = new System.Windows.Forms.Button();
+            this.exit_button = new System.Windows.Forms.Button();
+            this.register_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logintext
@@ -71,6 +72,7 @@
             this.loginbutton.TabIndex = 3;
             this.loginbutton.Text = "УВІЙТИ";
             this.loginbutton.UseVisualStyleBackColor = true;
+            this.loginbutton.Click += new System.EventHandler(this.loginbutton_Click);
             // 
             // passwordlabel
             // 
@@ -82,28 +84,41 @@
             this.passwordlabel.TabIndex = 4;
             this.passwordlabel.Text = "ПАРОЛЬ";
             // 
-            // back_button
+            // exit_button
             // 
-            this.back_button.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_button.Location = new System.Drawing.Point(332, 343);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(425, 44);
-            this.back_button.TabIndex = 5;
-            this.back_button.Text = "НАЗАД";
-            this.back_button.UseVisualStyleBackColor = true;
+            this.exit_button.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_button.Location = new System.Drawing.Point(332, 343);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(425, 44);
+            this.exit_button.TabIndex = 5;
+            this.exit_button.Text = "ВИХІД";
+            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
-            // login
+            // register_button
+            // 
+            this.register_button.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register_button.Location = new System.Drawing.Point(332, 393);
+            this.register_button.Name = "register_button";
+            this.register_button.Size = new System.Drawing.Size(425, 44);
+            this.register_button.TabIndex = 6;
+            this.register_button.Text = "ЗАРЕЄСТРУВАТИСЬ";
+            this.register_button.UseVisualStyleBackColor = true;
+            this.register_button.Click += new System.EventHandler(this.register_button_Click);
+            // 
+            // login_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 561);
-            this.Controls.Add(this.back_button);
+            this.Controls.Add(this.register_button);
+            this.Controls.Add(this.exit_button);
             this.Controls.Add(this.passwordlabel);
             this.Controls.Add(this.loginbutton);
             this.Controls.Add(this.loginlabel);
             this.Controls.Add(this.password);
             this.Controls.Add(this.logintext);
-            this.Name = "login";
+            this.Name = "login_form";
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
@@ -118,6 +133,7 @@
         private System.Windows.Forms.Label loginlabel;
         private System.Windows.Forms.Button loginbutton;
         private System.Windows.Forms.Label passwordlabel;
-        private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.Button register_button;
     }
 }

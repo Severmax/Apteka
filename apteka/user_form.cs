@@ -29,5 +29,19 @@ namespace apteka
                /// не видаляє
             }
         }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            login_form loginfrm = new login_form();
+            this.Close();
+            loginfrm.Show();
+        }
+
+        private void match_button_Click(object sender, EventArgs e)
+        {
+            survey_form surveyfrm = new survey_form();
+            this.Close();
+            surveyfrm.Show();
+        }
     }
 }

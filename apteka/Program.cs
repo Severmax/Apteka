@@ -16,7 +16,8 @@ namespace apteka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new user_form());
+            Application.Run(new login_form());
+         
         }
     }
 }

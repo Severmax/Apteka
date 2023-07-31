@@ -63,6 +63,7 @@
             this.match_button.TabIndex = 2;
             this.match_button.Text = "Підібрати ліки";
             this.match_button.UseVisualStyleBackColor = true;
+            this.match_button.Click += new System.EventHandler(this.match_button_Click);
             // 
             // clear_button
             // 
@@ -84,8 +85,9 @@
             this.back_button.TabIndex = 4;
             this.back_button.Text = "Назад";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
-            // user
+            // user_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +97,7 @@
             this.Controls.Add(this.match_button);
             this.Controls.Add(this.list_med);
             this.Controls.Add(this.welcome_label);
-            this.Name = "user";
+            this.Name = "user_form";
             this.Text = "user";
             this.ResumeLayout(false);
             this.PerformLayout();

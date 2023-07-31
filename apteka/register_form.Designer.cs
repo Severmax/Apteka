@@ -182,8 +182,9 @@
             this.back_button.TabIndex = 14;
             this.back_button.Text = "Назад";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
-            // register
+            // register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +204,7 @@
             this.Controls.Add(this.name_textbox);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.surname_label);
-            this.Name = "register";
+            this.Name = "register_form";
             this.Text = "register";
             this.Load += new System.EventHandler(this.register_Load);
             this.ResumeLayout(false);

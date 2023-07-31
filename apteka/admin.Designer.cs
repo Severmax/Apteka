@@ -1,6 +1,6 @@
 ﻿namespace apteka
 {
-    partial class admin
+    partial class admin_form
     {
         /// <summary>
         /// Required designer variable.
@@ -85,6 +85,7 @@
             this.settings_button.TabIndex = 4;
             this.settings_button.Text = "Налаштування";
             this.settings_button.UseVisualStyleBackColor = true;
+            this.settings_button.Click += new System.EventHandler(this.settings_button_Click);
             // 
             // back_button
             // 
@@ -95,8 +96,9 @@
             this.back_button.TabIndex = 5;
             this.back_button.Text = "Назад";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
-            // admin
+            // admin_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,8 +109,9 @@
             this.Controls.Add(this.delete_button);
             this.Controls.Add(this.add_button);
             this.Controls.Add(this.list_med);
-            this.Name = "admin";
+            this.Name = "admin_form";
             this.Text = "admin";
+            this.Load += new System.EventHandler(this.admin_Load);
             this.ResumeLayout(false);
 
         }

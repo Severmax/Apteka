@@ -73,6 +73,7 @@
             this.back_button.TabIndex = 3;
             this.back_button.Text = "Назад";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // survey_form
             // 

@@ -21,5 +21,12 @@ namespace apteka
         {
 
         }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            user_form userfrm = new user_form();
+            this.Close();
+            userfrm.Show();
+        }
     }
 }

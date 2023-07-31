@@ -26,5 +26,35 @@ namespace apteka
         {
 
         }
+
+        private void loginbutton_Click(object sender, EventArgs e)
+        {
+            if (logintext.Text == "admin")
+
+            {
+                admin_form adminfrm = new admin_form();
+                this.Hide();
+                adminfrm.Show();
+            }
+            else
+            {
+                user_form userfrm = new user_form();
+                this.Hide();
+                userfrm.Show();
+            }    
+          }
+
+        private void exit_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void register_button_Click(object sender, EventArgs e)
+        {
+            register_form registerfrm = new register_form();
+            this.Close();
+            registerfrm.Show();
+        }
     }
-}
+    }
+
