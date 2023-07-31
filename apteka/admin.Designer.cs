@@ -1,6 +1,6 @@
 ﻿namespace apteka
 {
-    partial class admin
+    partial class admin_form
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,7 @@
             this.list_med.Size = new System.Drawing.Size(938, 490);
             this.list_med.TabIndex = 0;
             this.list_med.UseCompatibleStateImageBehavior = false;
+            this.list_med.SelectedIndexChanged += new System.EventHandler(this.list_med_SelectedIndexChanged);
             // 
             // add_button
             // 

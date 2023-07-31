@@ -6,15 +6,27 @@ using System.Threading.Tasks;
 
 namespace apteka
 {
-
-    public struct medicine
-    {
-        string name;
-        string instruction;
-        int age;
-        List<string> forWhat;
-        List<string> contraindications;
+    [Serializable]
+    public class Medicines 
+    { 
+        public List<Medicine> Data = new List<Medicine>();    
     }
+    [Serializable]
+    public class Medicine
+    {
+        public string name;
+        public string instruction;
+        public int age;
+        public List<string> forWhat;
+        public List<string> contraindications;
+    }
+    [Serializable]
+    public class Admins 
+    {
+        public List<Admin> Data = new List<Admin>();
+    }
+
+    [Serializable]
     public class Admin
     {
         public string login;
@@ -26,17 +38,17 @@ namespace apteka
             this.password = login;
         }
 
-        public void AddMedicine(medicine med) 
+        public void AddMedicine(Medicine med) 
         { 
         
         }
 
-        public void DelMedicine(medicine med)
+        public void DelMedicine(Medicine med)
         {
 
         }
 
-        public void ReMedicine(medicine med)
+        public void ReMedicine(Medicine med)
         {
 
         }

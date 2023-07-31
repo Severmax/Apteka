@@ -94,7 +94,7 @@
     <Compile Include="user_form.Designer.cs">
       <DependentUpon>user_form.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="admin.resx">
+    <EmbeddedResource Include="admin_form.resx">
       <DependentUpon>admin_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
