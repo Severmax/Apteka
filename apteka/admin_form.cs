@@ -22,6 +22,7 @@ namespace apteka
 
         }
 
+
         private void admin_Load(object sender, EventArgs e)
         {
 
@@ -41,5 +42,6 @@ namespace apteka
             this.Close();
             settingsfrm.Show();
         }
+
     }
 }

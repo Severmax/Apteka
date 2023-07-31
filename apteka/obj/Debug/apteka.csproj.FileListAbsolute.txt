@@ -32,3 +32,6 @@ C:\Users\icefaced\Desktop\КУРСАЧ\apteka\Apteka\apteka\obj\Debug\apteka.csp
 C:\Users\icefaced\Desktop\КУРСАЧ\apteka\Apteka\apteka\obj\Debug\apteka.exe
 C:\Users\icefaced\Desktop\КУРСАЧ\apteka\Apteka\apteka\obj\Debug\apteka.pdb
 C:\Users\icefaced\Desktop\КУРСАЧ\apteka\Apteka\apteka\obj\Debug\apteka.admin_form.resources
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\bin\Debug\apteka.exe.config
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\obj\Debug\apteka.exe
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\obj\Debug\apteka.pdb
