@@ -70,7 +70,7 @@
             this.name_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_textbox.Location = new System.Drawing.Point(546, 126);
             this.name_textbox.Name = "name_textbox";
-            this.name_textbox.Size = new System.Drawing.Size(365, 39);
+            this.name_textbox.Size = new System.Drawing.Size(365, 36);
             this.name_textbox.TabIndex = 2;
             // 
             // surname_textbox
@@ -78,7 +78,7 @@
             this.surname_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surname_textbox.Location = new System.Drawing.Point(546, 171);
             this.surname_textbox.Name = "surname_textbox";
-            this.surname_textbox.Size = new System.Drawing.Size(365, 39);
+            this.surname_textbox.Size = new System.Drawing.Size(365, 36);
             this.surname_textbox.TabIndex = 3;
             // 
             // age_label
@@ -96,7 +96,7 @@
             this.age_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_textbox.Location = new System.Drawing.Point(546, 216);
             this.age_textbox.Name = "age_textbox";
-            this.age_textbox.Size = new System.Drawing.Size(365, 39);
+            this.age_textbox.Size = new System.Drawing.Size(365, 36);
             this.age_textbox.TabIndex = 5;
             // 
             // login_label
@@ -114,7 +114,7 @@
             this.login_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_textbox.Location = new System.Drawing.Point(546, 261);
             this.login_textbox.Name = "login_textbox";
-            this.login_textbox.Size = new System.Drawing.Size(365, 39);
+            this.login_textbox.Size = new System.Drawing.Size(365, 36);
             this.login_textbox.TabIndex = 7;
             // 
             // password_label
@@ -132,7 +132,7 @@
             this.password_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password_textbox.Location = new System.Drawing.Point(546, 306);
             this.password_textbox.Name = "password_textbox";
-            this.password_textbox.Size = new System.Drawing.Size(365, 39);
+            this.password_textbox.Size = new System.Drawing.Size(365, 36);
             this.password_textbox.TabIndex = 9;
             // 
             // password2_label
@@ -150,7 +150,7 @@
             this.password2_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password2_textbox.Location = new System.Drawing.Point(546, 351);
             this.password2_textbox.Name = "password2_textbox";
-            this.password2_textbox.Size = new System.Drawing.Size(364, 39);
+            this.password2_textbox.Size = new System.Drawing.Size(364, 36);
             this.password2_textbox.TabIndex = 11;
             // 
             // register_label
@@ -172,6 +172,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Зареєструватися";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // back_button
             // 

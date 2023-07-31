@@ -43,5 +43,10 @@ namespace apteka
             settingsfrm.Show();
         }
 
+        private void list_med_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

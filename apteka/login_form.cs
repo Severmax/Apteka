@@ -46,7 +46,7 @@ namespace apteka
 
         private void exit_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void register_button_Click(object sender, EventArgs e)
