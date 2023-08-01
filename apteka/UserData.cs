@@ -11,13 +11,14 @@ namespace apteka
 {
     class UserData
     {
-        private string path;
-        public UserData(string path) 
+        private static string path;
+
+        public static void path_Set(string newpath) 
         {
-            this.path = path;
+            path = newpath;
         }
 
-        void SaveData(Users users) 
+        public static void SaveData(Users users) 
         {
             try
             {
@@ -26,8 +27,9 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Users));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     xml.Serialize(fs, users);
+                    fs.Close();
                 }
-                if (path.Contains(".json"))
+                else if (path.Contains(".json"))
                 {
                     //...//
                 }
@@ -44,7 +46,7 @@ namespace apteka
         
             
         }
-        Users LoadData() //выгружает с файла данные о пользователях
+        public static Users LoadData() //выгружает с файла данные о пользователях
         {
             try
             {
@@ -53,6 +55,7 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Users));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     Users users = (Users)xml.Deserialize(fs);
+                    fs.Close();
                     return users;
                 }
                 //else if (path.Contains(".json"))
@@ -72,7 +75,7 @@ namespace apteka
         }
 
 
-        void DelData(string login) 
+        public static void DelData(string login) 
         {
             try
             {
@@ -101,8 +104,8 @@ namespace apteka
         
         }
 
-        
-        User GetOneData(string login) 
+
+        public static User GetOneData(string login) 
         {
             try
             {

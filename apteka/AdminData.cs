@@ -11,14 +11,14 @@ namespace apteka
 {
     public class AdminData
     {
-        private string path;
+        private static string path;
 
-        public AdminData(string path) 
+        public static void path_Set(string newpath)
         {
-            this.path = path;
+            path = newpath;
         }
 
-        void SaveData(Admins admins)
+        public static void SaveData(Admins admins)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace apteka
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     xml.Serialize(fs, admins);
                 }
-                if (path.Contains(".json"))
+                else if (path.Contains(".json"))
                 {
                     //...//
                 }
@@ -45,7 +45,7 @@ namespace apteka
 
 
         }
-        Admins LoadData() //выгружает с файла данные о пользователях
+        public static Admins LoadData() //выгружает с файла данные о пользователях
         {
             try
             {
@@ -73,7 +73,7 @@ namespace apteka
         }
 
 
-        void DelData(string login)
+        public static void DelData(string login)
         {
             try
             {
@@ -91,7 +91,7 @@ namespace apteka
         }
 
 
-        Admin GetOneData(string login)
+        public static Admin GetOneData(string login)
         {
             try
             {

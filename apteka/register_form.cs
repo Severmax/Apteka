@@ -31,6 +31,20 @@ namespace apteka
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (this.password_textbox.Text == this.password2_textbox.Text) 
+            {
+                User user = new User(name_textbox.Text, surname_textbox.Text, int.Parse(age_textbox.Text), login_textbox.Text,
+                    password_textbox.Text);
+                Users users = UserData.LoadData();
+                users.Data.Add(user);
+                UserData.SaveData(users);
+
+                login_form loginfrm = new login_form();
+                this.Close();
+                loginfrm.Show();
+
+            }
+
 
         }
     }

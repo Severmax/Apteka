@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace apteka
 {
@@ -19,7 +20,12 @@ namespace apteka
 
         private void login_Load(object sender, EventArgs e)
         {
+            StreamReader rs = new StreamReader("pathfile.json");
+            UserData.path_Set(rs.ReadLine());
+            MedicineData.path_Set(rs.ReadLine());
+            AdminData.path_Set(rs.ReadLine());
 
+            rs.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,7 +58,7 @@ namespace apteka
         private void register_button_Click(object sender, EventArgs e)
         {
             register_form registerfrm = new register_form();
-            this.Close();
+            this.Hide();
             registerfrm.Show();
         }
     }

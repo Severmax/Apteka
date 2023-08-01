@@ -47,3 +47,6 @@ C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\obj\Debug\apteka.use
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\obj\Debug\apteka.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\bin\Debug\apteka.exe
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test\Apteka\apteka\bin\Debug\apteka.pdb
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test 1\apteka\bin\Debug\apteka.exe.config
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test 1\apteka\obj\Debug\apteka.exe
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Test 1\apteka\obj\Debug\apteka.pdb

@@ -11,13 +11,14 @@ namespace apteka
 {
     public class MedicineData
     {
-        private string path;
-        public MedicineData(string path) 
-        {
-            this.path = path;
-        } 
+        private static string path;
 
-        Medicines LoadData()
+        public static void path_Set(string newpath)
+        {
+            path = newpath;
+        }
+
+        public static Medicines LoadData()
         {
             try
             {
@@ -28,7 +29,7 @@ namespace apteka
                     Medicines med = (Medicines)xml.Deserialize(fs);
                     return med;
                 }
-                if (path.Contains(".json") || path.Contains(".JSON"))
+                else if (path.Contains(".json") || path.Contains(".JSON"))
                 {
                     //....//
                 }
@@ -41,7 +42,7 @@ namespace apteka
             return null;
         }
 
-        void SaveData(Medicines med) 
+        public static void SaveData(Medicines med) 
         {
             try
             {
@@ -51,7 +52,7 @@ namespace apteka
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     xml.Serialize(fs, med);
                 }
-                if (path.Contains(".json") || path.Contains(".JSON"))
+                else if (path.Contains(".json") || path.Contains(".JSON"))
                 {
                     //....//
                 }
@@ -62,7 +63,7 @@ namespace apteka
                 MessageBox.Show(ex.Message);
             }  
         }
-        Medicine GetOneData(string name)
+        public static Medicine GetOneData(string name)
         {
             try
             {
@@ -84,7 +85,7 @@ namespace apteka
             return null;
         }
 
-        void DelData(string name) 
+        public static void DelData(string name) 
         {
             try
             {

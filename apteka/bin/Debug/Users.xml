@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Data>
+    <User>
+      <firstname>Max</firstname>
+      <lastname>Test</lastname>
+      <age>19</age>
+      <login>UserT</login>
+      <password>12345</password>
+    </User>
+    <User>
+      <firstname>Karl</firstname>
+      <lastname>Test</lastname>
+      <age>12</age>
+      <login>UserT2</login>
+      <password>12345</password>
+    </User>
+  </Data>
+</Users>

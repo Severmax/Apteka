@@ -71,6 +71,7 @@
             this.save_button.TabIndex = 3;
             this.save_button.Text = "Зберегти";
             this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
             // back_button
             // 

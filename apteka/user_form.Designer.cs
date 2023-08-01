@@ -41,7 +41,7 @@
             this.welcome_label.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcome_label.Location = new System.Drawing.Point(423, 9);
             this.welcome_label.Name = "welcome_label";
-            this.welcome_label.Size = new System.Drawing.Size(230, 29);
+            this.welcome_label.Size = new System.Drawing.Size(231, 29);
             this.welcome_label.TabIndex = 0;
             this.welcome_label.Text = "Привіт, Username";
             // 
@@ -99,6 +99,7 @@
             this.Controls.Add(this.welcome_label);
             this.Name = "user_form";
             this.Text = "user";
+            this.Load += new System.EventHandler(this.user_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

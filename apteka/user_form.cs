@@ -43,5 +43,10 @@ namespace apteka
             this.Close();
             surveyfrm.Show();
         }
+
+        private void user_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
