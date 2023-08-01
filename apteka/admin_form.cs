@@ -19,7 +19,9 @@ namespace apteka
 
         private void edit_button_Click(object sender, EventArgs e)
         {
-
+            med_form medfrm = new med_form();
+            this.Close();
+            medfrm.Show();
         }
 
 
@@ -48,5 +50,11 @@ namespace apteka
 
         }
 
+        private void add_button_Click(object sender, EventArgs e)
+        {
+            med_form medfrm = new med_form();
+            this.Close();
+            medfrm.Show();
+        }
     }
 }

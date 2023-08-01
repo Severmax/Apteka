@@ -55,6 +55,7 @@
             this.add_button.TabIndex = 1;
             this.add_button.Text = "Додати новий препарат";
             this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
             // delete_button
             // 
