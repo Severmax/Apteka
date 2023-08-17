@@ -19,6 +19,20 @@ namespace apteka
         public int age;
         public List<string> forWhat;
         public List<string> contraindications;
+
+        public Medicine() 
+        {
+                    
+        }
+
+        public Medicine(string name, string instruction, int age, List<string> forWhat, List<string> contraindications)
+        {
+            this.name = name;
+            this.instruction = instruction;
+            this.age = age;
+            this.forWhat = forWhat;
+            this.contraindications = contraindications;
+        }
     }
     [Serializable]
     public class Admins 
@@ -39,18 +53,24 @@ namespace apteka
         }
 
         public void AddMedicine(Medicine med) 
-        { 
-        
+        {
+            Medicines meds = MedicineData.LoadData();
+            meds.Data.Add(med);
+            MedicineData.SaveData(meds);
         }
 
         public void DelMedicine(Medicine med)
         {
-
+            MedicineData.DelData(med.name);
         }
 
         public void ReMedicine(Medicine med)
         {
+            MedicineData.DelData(med.name);
 
+            Medicines meds = MedicineData.LoadData();
+            meds.Data.Add(med);
+            MedicineData.SaveData(meds);
         }
     }
 }
