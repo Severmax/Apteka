@@ -23,5 +23,10 @@ namespace apteka
             this.Close();
             adminfrm.Show();
         }
+
+        private void contraindications_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
