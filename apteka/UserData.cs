@@ -116,7 +116,7 @@ namespace apteka
                     {
                         if (user.login == login) return user; 
                     }
-                    throw new Exception("Данного пользователя не существует");
+                    throw new Exception("Даного користувача не існує");
                 }
                 //else if (path.Contains(".json"))
                 //{

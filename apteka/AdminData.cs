@@ -27,6 +27,7 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Admins));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     xml.Serialize(fs, admins);
+                    fs.Close();
                 }
                 else if (path.Contains(".json"))
                 {
@@ -54,6 +55,7 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Admins));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     Admins admins = (Admins)xml.Deserialize(fs);
+                    fs.Close();
                     return admins;
                 }
                 //else if (path.Contains(".json"))
@@ -102,7 +104,7 @@ namespace apteka
                     {
                         if (admin.login == login) return admin;
                     }
-                    throw new Exception("Данного пользователя не существует");
+                    //throw new Exception("Даного користувача не існує");
                 }
                 //else if (path.Contains(".json"))
                 //{

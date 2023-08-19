@@ -15,5 +15,12 @@
       <login>UserT2</login>
       <password>12345</password>
     </User>
+    <User>
+      <firstname>Максим </firstname>
+      <lastname>Тестовий</lastname>
+      <age>19</age>
+      <login>MaxTest</login>
+      <password>12345</password>
+    </User>
   </Data>
 </Users>

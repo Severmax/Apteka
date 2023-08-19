@@ -84,3 +84,4 @@ C:\Users\Admin\Desktop\Дз\КУРСАЧ\Новая папка (2)\Apteka\apteka
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Новая папка (2)\Apteka\apteka\obj\Debug\apteka.survey_form.resources
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Новая папка (2)\Apteka\apteka\obj\Debug\apteka.user_form.resources
 C:\Users\Admin\Desktop\Дз\КУРСАЧ\Новая папка (2)\Apteka\apteka\obj\Debug\apteka.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Дз\КУРСАЧ\Новая папка (2)\Apteka\apteka\bin\Debug\LoginComp.dll

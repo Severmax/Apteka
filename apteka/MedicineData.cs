@@ -27,6 +27,7 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Medicines));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     Medicines med = (Medicines)xml.Deserialize(fs);
+                    fs.Close();
                     return med;
                 }
                 else if (path.Contains(".json") || path.Contains(".JSON"))
@@ -51,6 +52,7 @@ namespace apteka
                     XmlSerializer xml = new XmlSerializer(typeof(Medicines));
                     FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
                     xml.Serialize(fs, med);
+                    fs.Close();
                 }
                 else if (path.Contains(".json") || path.Contains(".JSON"))
                 {

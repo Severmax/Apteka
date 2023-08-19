@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoginComp;
 
 namespace apteka
 {
@@ -31,7 +32,20 @@ namespace apteka
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.password_textbox.Text == this.password2_textbox.Text) 
+
+            if (Login.Cyrillic_check(this.login_textbox.Text))
+            {
+                MessageBox.Show("Присутня кирилиця в логіні");
+            }
+            else if (Login.Cyrillic_check(this.password_textbox.Text))
+            {
+                MessageBox.Show("Присутня кирилиця в паролі");
+            }
+            else if (!Login.Pass_check(this.password_textbox.Text, this.password2_textbox.Text))
+            {
+                MessageBox.Show("Паролі не совпадають");
+            }
+            else
             {
                 User user = new User(name_textbox.Text, surname_textbox.Text, int.Parse(age_textbox.Text), login_textbox.Text,
                     password_textbox.Text);

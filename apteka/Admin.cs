@@ -46,10 +46,15 @@ namespace apteka
         public string login;
         public string password;
 
+        public Admin()
+        {
+            
+        }
+
         public Admin(string login, string password) 
         {
             this.login = login;
-            this.password = login;
+            this.password = password;
         }
 
         public void AddMedicine(Medicine med) 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using LoginComp;
 
 namespace apteka
 {
@@ -26,6 +27,8 @@ namespace apteka
             AdminData.path_Set(rs.ReadLine());
 
             rs.Close();
+
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,8 +38,8 @@ namespace apteka
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
-            if (logintext.Text == "admin")
-
+            Admin adm = AdminData.GetOneData(this.logintext.Text);
+            if (!(adm == null) && Login.Pass_check(adm.password, this.password.Text))
             {
                 admin_form adminfrm = new admin_form();
                 this.Hide();
@@ -44,9 +47,22 @@ namespace apteka
             }
             else
             {
-                user_form userfrm = new user_form();
-                this.Hide();
-                userfrm.Show();
+                User user = UserData.GetOneData(this.logintext.Text);
+                if (!(user == null)) 
+                {
+                    if (Login.Pass_check(user.password, this.password.Text))
+                    {
+                        user_form userfrm = new user_form();
+                        this.Hide();
+                        userfrm.Show();
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Ви ввели невірний пароль.");
+                    }
+                    
+                }
+                
             }    
           }
 

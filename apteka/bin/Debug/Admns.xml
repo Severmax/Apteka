@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Admins xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Data>
+    <Admin>
+      <login>Admin17</login>
+      <password>admin</password>
+    </Admin>
+  </Data>
+</Admins>
