@@ -12,8 +12,11 @@ namespace apteka
 {
     public partial class user_form : Form
     {
-        public user_form()
+
+        private User user;
+        public user_form(User user)
         {
+            this.user = user;
             InitializeComponent();
         }
 
@@ -39,12 +42,17 @@ namespace apteka
 
         private void match_button_Click(object sender, EventArgs e)
         {
-            survey_form surveyfrm = new survey_form();
+            survey_form surveyfrm = new survey_form(user);
             this.Close();
             surveyfrm.Show();
         }
 
         private void user_form_Load(object sender, EventArgs e)
+        {
+            this.welcome_label.Text = "Привіт, " + user.firstname+".";
+        }
+
+        private void welcome_label_Click(object sender, EventArgs e)
         {
 
         }

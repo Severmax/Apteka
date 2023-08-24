@@ -52,7 +52,7 @@ namespace apteka
                 {
                     if (Login.Pass_check(user.password, this.password.Text))
                     {
-                        user_form userfrm = new user_form();
+                        user_form userfrm = new user_form(user);
                         this.Hide();
                         userfrm.Show();
                     }

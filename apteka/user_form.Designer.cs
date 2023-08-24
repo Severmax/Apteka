@@ -44,6 +44,7 @@
             this.welcome_label.Size = new System.Drawing.Size(231, 29);
             this.welcome_label.TabIndex = 0;
             this.welcome_label.Text = "Привіт, Username";
+            this.welcome_label.Click += new System.EventHandler(this.welcome_label_Click);
             // 
             // list_med
             // 

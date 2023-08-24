@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.qestion_label = new System.Windows.Forms.Label();
             this.yes_button = new System.Windows.Forms.Button();
             this.no_button = new System.Windows.Forms.Button();
             this.back_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // qestion_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(231, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.qestion_label.AutoSize = true;
+            this.qestion_label.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qestion_label.Location = new System.Drawing.Point(231, 107);
+            this.qestion_label.Name = "qestion_label";
+            this.qestion_label.Size = new System.Drawing.Size(144, 50);
+            this.qestion_label.TabIndex = 0;
+            this.qestion_label.Text = "label1";
             // 
             // yes_button
             // 
@@ -83,7 +83,7 @@
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.no_button);
             this.Controls.Add(this.yes_button);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.qestion_label);
             this.Name = "survey_form";
             this.Text = "survey";
             this.Load += new System.EventHandler(this.survey_form_Load);
@@ -94,7 +94,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label qestion_label;
         private System.Windows.Forms.Button yes_button;
         private System.Windows.Forms.Button no_button;
         private System.Windows.Forms.Button back_button;
