@@ -88,6 +88,7 @@
             this.add_button.TabIndex = 4;
             this.add_button.Text = "ДОДАТИ";
             this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
             // back_button
             // 
@@ -123,7 +124,7 @@
             this.age_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_textbox.Location = new System.Drawing.Point(434, 252);
             this.age_textbox.Name = "age_textbox";
-            this.age_textbox.Size = new System.Drawing.Size(626, 32);
+            this.age_textbox.Size = new System.Drawing.Size(626, 30);
             this.age_textbox.TabIndex = 9;
             // 
             // age_label
@@ -141,7 +142,7 @@
             this.contraindications_textbox.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contraindications_textbox.Location = new System.Drawing.Point(435, 327);
             this.contraindications_textbox.Name = "contraindications_textbox";
-            this.contraindications_textbox.Size = new System.Drawing.Size(627, 32);
+            this.contraindications_textbox.Size = new System.Drawing.Size(627, 30);
             this.contraindications_textbox.TabIndex = 11;
             // 
             // contraindications_label

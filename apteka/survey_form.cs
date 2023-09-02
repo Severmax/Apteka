@@ -14,7 +14,12 @@ namespace apteka
     public partial class survey_form : Form
     {
         private User user;
-       
+        private Questions qs = QuestionData.LoadData();
+        private Question quest;
+        private int i = 0;
+
+        private List<string> forWhat;
+        private List<string> contraindication;
 
         public survey_form(User user)
         {
@@ -24,7 +29,9 @@ namespace apteka
 
         private void survey_form_Load(object sender, EventArgs e)
         {
-            this.qestion_label.Text = "";
+            quest = qs.data[i];
+            this.qestion_label.Text = quest.text;
+            contraindication = new List<string>();
         }
 
         private void back_button_Click(object sender, EventArgs e)
@@ -32,6 +39,75 @@ namespace apteka
             user_form userfrm = new user_form(user);
             this.Close();
             userfrm.Show();
+        }
+
+        private void qestion_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yes_button_Click(object sender, EventArgs e)
+        {
+
+            if (quest.type == "forWhat") 
+            {
+                forWhat = quest.ret;
+                for (; i < qs.data.Count; i++)
+                {
+                    if (qs.data[i+1].type== "contraindication") break;
+                }
+            }
+            if (quest.type == "contraindication") 
+            {
+                foreach (string obg in quest.ret) 
+                {
+                    contraindication.Add(obg);  
+                }
+            } 
+
+            if (quest.last)
+            {
+                UserData.DelData(user.login);
+                Users users = UserData.LoadData();
+                if (forWhat != null) user.SetMedicines(forWhat, contraindication, user.age);
+                users.Data.Add(user);
+                UserData.SaveData(users);
+                user_form userfrm = new user_form(user);
+                this.Close();
+                userfrm.Show();
+            }
+            if (i < qs.data.Count-1)
+            {
+                i++;
+                quest = qs.data[i];
+                this.qestion_label.Text = quest.text;
+            }
+            
+            
+           
+        }
+
+        private void no_button_Click(object sender, EventArgs e)
+        {
+            if (quest.last)
+            {                
+                UserData.DelData(user.login);
+                Users users = UserData.LoadData();
+                if (forWhat != null) user.SetMedicines(forWhat, contraindication, user.age);
+                users.Data.Add(user);
+                UserData.SaveData(users);
+                user_form userfrm = new user_form(user);
+                this.Close();
+                userfrm.Show();
+            }
+            if (i < qs.data.Count-1)
+            {
+                i++;
+                quest = qs.data[i];
+                this.qestion_label.Text = quest.text;
+            }
+            
+
         }
     }
 }

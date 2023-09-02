@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <data>
+    <Question>
+      <text>Чи має пацієнт головний чи зубний біль?</text>
+      <type>forWhat</type>
+      <ret>
+        <string>головний біль</string>
+        <string>зубний біль</string>
+      </ret>
+      <last>false</last>
+    </Question>
+    <Question>
+      <text>Чи має пацієнт инфекцію кишечника, викликану бактеріями?</text>
+      <type>forWhat</type>
+      <ret>
+        <string>інфекція кишечника, викликана бактеріями</string>
+      </ret>
+      <last>false</last>
+    </Question>
+    <Question>
+      <text>Чи потребує пацієнт лікування патологічних процесів (простатит, аднексит, остеомієліт)?</text>
+      <type>forWhat</type>
+      <ret>
+        <string>патологічний процес (простатит, аднексит, остеомієліт)</string>
+      </ret>
+      <last>false</last>
+    </Question>
+    <Question>
+      <text>Чи має пацієнт гострий гепатит?</text>
+      <type>contraindication</type>
+      <ret>
+        <string>гострий гепатит</string>
+      </ret>
+      <last>false</last>
+    </Question>
+    <Question>
+      <text>Чи має пацієнт порушення згортання крові?</text>
+      <type>contraindication</type>
+      <ret>
+        <string>порушення згортання крові</string>
+      </ret>
+      <last>true</last>
+    </Question>
+  </data>
+</Questions>

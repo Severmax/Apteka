@@ -16,6 +16,14 @@ namespace apteka
         public static void path_Set(string newpath) 
         {
             path = newpath;
+
+            bool fileExist = File.Exists(path);
+
+            if (!fileExist) 
+            {
+                Users file = new Users();
+                SaveData(file);
+            }
         }
 
         public static void SaveData(Users users) 
@@ -25,7 +33,7 @@ namespace apteka
                 if (path.Contains(".xml"))
                 {
                     XmlSerializer xml = new XmlSerializer(typeof(Users));
-                    FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+                    FileStream fs = new FileStream(path, FileMode.Create);
                     xml.Serialize(fs, users);
                     fs.Close();
                 }
@@ -82,10 +90,8 @@ namespace apteka
                 if (path.Contains(".xml"))
                 {
                     Users users = LoadData();
-                    foreach (User user in users.Data) 
-                    {
-                        if (user.login == login) users.Data.Remove(user);
-                    }
+                    User user = GetOneData(login, users);
+                    if (user != null) users.Data.Remove(user);
                     SaveData(users);
                 }
                 //else if (path.Contains(".json"))
@@ -105,13 +111,12 @@ namespace apteka
         }
 
 
-        public static User GetOneData(string login) 
+        public static User GetOneData(string login, Users users) 
         {
             try
             {
                 if (path.Contains(".xml"))
                 {
-                    Users users = LoadData();
                     foreach (User user in users.Data)
                     {
                         if (user.login == login) return user; 

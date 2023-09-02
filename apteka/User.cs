@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace apteka
 {
@@ -21,9 +22,12 @@ namespace apteka
         public int age;
         public string login;
         public string password;
-        List<string> medicines;
+        public List<string> medicines;
 
-        public User() { }
+        public User() 
+        {
+            
+        }
         public User(string firstname, string lastname, int age, string login, string password) 
         {
             this.firstname = firstname;
@@ -42,9 +46,41 @@ namespace apteka
             this.password = password;
             this.medicines = medicines;
         }
-        public void SetMedicines(string forWhat, List<string> contraindication) 
+        public void SetMedicines(List<string> forWhat, List<string> contraindications, int age)
         {
- 
+            Medicines meds = MedicineData.LoadData();
+
+            foreach (var med in meds.Data)
+            {
+                bool canAdd = true;
+
+                foreach (var obg in med.forWhat)
+                {
+                    if (!forWhat.Contains(obg))
+                    {
+                        canAdd = false;
+                        break; // Якщо хоча б один forWhat не підходить, то не додавати лік
+                    }
+                }
+
+                if (canAdd)
+                {
+                    foreach (var obg1 in med.contraindications)
+                    {
+                        if (contraindications.Contains(obg1))
+                        {
+                            canAdd = false;
+                            break; // Якщо знайдено хоча б одну протипоказану contraindication, то не додавати лік
+                        }
+                    }
+                }
+
+                if (canAdd)
+                {
+                    this.medicines.Add(med.name);
+                    MessageBox.Show("Медикомент додан - " +med.name);
+                }
+            }
         }
     }
 }

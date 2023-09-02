@@ -5,22 +5,19 @@
       <firstname>Max</firstname>
       <lastname>Test</lastname>
       <age>19</age>
-      <login>UserT</login>
+      <login>Test1</login>
       <password>12345</password>
+      <medicines />
     </User>
     <User>
-      <firstname>Karl</firstname>
-      <lastname>Test</lastname>
-      <age>12</age>
-      <login>UserT2</login>
-      <password>12345</password>
-    </User>
-    <User>
-      <firstname>Максим </firstname>
+      <firstname>Максим</firstname>
       <lastname>Тестовий</lastname>
       <age>19</age>
       <login>MaxTest</login>
       <password>12345</password>
+      <medicines>
+        <string>Німесил</string>
+      </medicines>
     </User>
   </Data>
 </Users>

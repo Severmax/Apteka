@@ -25,6 +25,8 @@ namespace apteka
             UserData.path_Set(rs.ReadLine());
             MedicineData.path_Set(rs.ReadLine());
             AdminData.path_Set(rs.ReadLine());
+            QuestionData.path_Set("Questions.xml");
+
 
             rs.Close();
 
@@ -41,13 +43,13 @@ namespace apteka
             Admin adm = AdminData.GetOneData(this.logintext.Text);
             if (!(adm == null) && Login.Pass_check(adm.password, this.password.Text))
             {
-                admin_form adminfrm = new admin_form();
+                admin_form adminfrm = new admin_form(adm);
                 this.Hide();
                 adminfrm.Show();
             }
             else
             {
-                User user = UserData.GetOneData(this.logintext.Text);
+                User user = UserData.GetOneData(this.logintext.Text, UserData.LoadData());
                 if (!(user == null)) 
                 {
                     if (Login.Pass_check(user.password, this.password.Text))

@@ -37,12 +37,14 @@
             // qestion_label
             // 
             this.qestion_label.AutoSize = true;
-            this.qestion_label.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qestion_label.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qestion_label.Location = new System.Drawing.Point(231, 107);
+            this.qestion_label.Margin = new System.Windows.Forms.Padding(200, 100, 200, 100);
             this.qestion_label.Name = "qestion_label";
-            this.qestion_label.Size = new System.Drawing.Size(144, 50);
+            this.qestion_label.Size = new System.Drawing.Size(87, 29);
             this.qestion_label.TabIndex = 0;
             this.qestion_label.Text = "label1";
+            this.qestion_label.Click += new System.EventHandler(this.qestion_label_Click);
             // 
             // yes_button
             // 
@@ -53,6 +55,7 @@
             this.yes_button.TabIndex = 1;
             this.yes_button.Text = "Так";
             this.yes_button.UseVisualStyleBackColor = true;
+            this.yes_button.Click += new System.EventHandler(this.yes_button_Click);
             // 
             // no_button
             // 
@@ -63,6 +66,7 @@
             this.no_button.TabIndex = 2;
             this.no_button.Text = "Ні";
             this.no_button.UseVisualStyleBackColor = true;
+            this.no_button.Click += new System.EventHandler(this.no_button_Click);
             // 
             // back_button
             // 

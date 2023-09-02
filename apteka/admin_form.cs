@@ -12,14 +12,17 @@ namespace apteka
 {
     public partial class admin_form : Form
     {
-        public admin_form()
+        private Admin admin;
+        public admin_form(Admin admin)
         {
+            this.admin = admin;
             InitializeComponent();
         }
 
+
         private void edit_button_Click(object sender, EventArgs e)
         {
-            med_form medfrm = new med_form();
+            med_form medfrm = new med_form(admin);
             this.Close();
             medfrm.Show();
         }
@@ -40,7 +43,7 @@ namespace apteka
 
         private void settings_button_Click(object sender, EventArgs e)
         {
-            settings_form settingsfrm = new settings_form();
+            settings_form settingsfrm = new settings_form(admin);
             this.Close();
             settingsfrm.Show();
         }
@@ -52,7 +55,7 @@ namespace apteka
 
         private void add_button_Click(object sender, EventArgs e)
         {
-            med_form medfrm = new med_form();
+            med_form medfrm = new med_form(admin);
             this.Close();
             medfrm.Show();
         }

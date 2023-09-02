@@ -16,8 +16,10 @@ namespace apteka
 
     public partial class settings_form : Form
     {
-        public settings_form()
+        private Admin admin;
+        public settings_form(Admin admin)
         {
+            this.admin = admin;
             InitializeComponent();
         }
 
@@ -33,7 +35,7 @@ namespace apteka
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            admin_form adminfrm = new admin_form();
+            admin_form adminfrm = new admin_form(admin);
             this.Close();
             adminfrm.Show();
         }

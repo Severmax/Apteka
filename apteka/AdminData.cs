@@ -16,6 +16,14 @@ namespace apteka
         public static void path_Set(string newpath)
         {
             path = newpath;
+            
+            bool fileExist = File.Exists(path);
+
+            if (!fileExist)
+            {
+                Admins file = new Admins();
+                SaveData(file);
+            }
         }
 
         public static void SaveData(Admins admins)
