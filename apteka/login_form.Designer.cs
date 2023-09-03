@@ -40,25 +40,29 @@
             // logintext
             // 
             this.logintext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.logintext.Location = new System.Drawing.Point(332, 190);
+            this.logintext.Location = new System.Drawing.Point(443, 234);
+            this.logintext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logintext.Name = "logintext";
-            this.logintext.Size = new System.Drawing.Size(425, 31);
+            this.logintext.Size = new System.Drawing.Size(565, 37);
             this.logintext.TabIndex = 0;
             // 
             // password
             // 
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password.Location = new System.Drawing.Point(332, 256);
+            this.password.Location = new System.Drawing.Point(443, 315);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(425, 31);
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(565, 37);
             this.password.TabIndex = 1;
             // 
             // loginlabel
             // 
             this.loginlabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginlabel.Location = new System.Drawing.Point(503, 153);
+            this.loginlabel.Location = new System.Drawing.Point(671, 188);
+            this.loginlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loginlabel.Name = "loginlabel";
-            this.loginlabel.Size = new System.Drawing.Size(101, 34);
+            this.loginlabel.Size = new System.Drawing.Size(135, 42);
             this.loginlabel.TabIndex = 2;
             this.loginlabel.Text = "ЛОГІН";
             this.loginlabel.Click += new System.EventHandler(this.label1_Click);
@@ -66,9 +70,10 @@
             // loginbutton
             // 
             this.loginbutton.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginbutton.Location = new System.Drawing.Point(332, 293);
+            this.loginbutton.Location = new System.Drawing.Point(443, 361);
+            this.loginbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginbutton.Name = "loginbutton";
-            this.loginbutton.Size = new System.Drawing.Size(425, 44);
+            this.loginbutton.Size = new System.Drawing.Size(567, 54);
             this.loginbutton.TabIndex = 3;
             this.loginbutton.Text = "УВІЙТИ";
             this.loginbutton.UseVisualStyleBackColor = true;
@@ -78,18 +83,20 @@
             // 
             this.passwordlabel.AutoSize = true;
             this.passwordlabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordlabel.Location = new System.Drawing.Point(488, 224);
+            this.passwordlabel.Location = new System.Drawing.Point(651, 276);
+            this.passwordlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordlabel.Name = "passwordlabel";
-            this.passwordlabel.Size = new System.Drawing.Size(116, 29);
+            this.passwordlabel.Size = new System.Drawing.Size(142, 36);
             this.passwordlabel.TabIndex = 4;
             this.passwordlabel.Text = "ПАРОЛЬ";
             // 
             // exit_button
             // 
             this.exit_button.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.Location = new System.Drawing.Point(332, 343);
+            this.exit_button.Location = new System.Drawing.Point(443, 422);
+            this.exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(425, 44);
+            this.exit_button.Size = new System.Drawing.Size(567, 54);
             this.exit_button.TabIndex = 5;
             this.exit_button.Text = "ВИХІД";
             this.exit_button.UseVisualStyleBackColor = true;
@@ -98,9 +105,10 @@
             // register_button
             // 
             this.register_button.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register_button.Location = new System.Drawing.Point(332, 393);
+            this.register_button.Location = new System.Drawing.Point(443, 484);
+            this.register_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.register_button.Name = "register_button";
-            this.register_button.Size = new System.Drawing.Size(425, 44);
+            this.register_button.Size = new System.Drawing.Size(567, 54);
             this.register_button.TabIndex = 6;
             this.register_button.Text = "ЗАРЕЄСТРУВАТИСЬ";
             this.register_button.UseVisualStyleBackColor = true;
@@ -108,9 +116,9 @@
             // 
             // login_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1579, 690);
             this.Controls.Add(this.register_button);
             this.Controls.Add(this.exit_button);
             this.Controls.Add(this.passwordlabel);
@@ -118,6 +126,7 @@
             this.Controls.Add(this.loginlabel);
             this.Controls.Add(this.password);
             this.Controls.Add(this.logintext);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "login_form";
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
